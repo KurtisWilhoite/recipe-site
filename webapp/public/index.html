@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Recipe providing a random recipe on refresh"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Random Recipe</title>
+  </head>
+  <body>
+
+    <div class="container d-flex justify-content-center">
+      <div class="card" style="width: 500px">
+        <img class="card-img-top" id="recipe_img" src="" alt="Random recipe image" style="">
+        <div class="card-body">
+          <h5 class="card-title" id="recipeName"></h5>
+          <p class="card-text" id="recipeSummary"></p>
+        </div>
+        <table class="table table-stripped" id="recipeIngredients">
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Amount</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody id="ingEntry"></tbody>
+        </table>
+        <div class="card-body">
+          <p id="recipeInstructions"></p>
+          <a href="" class="card-link" id="recipeLink">Link to source</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="%PUBLIC_URL%/js/common.js"></script>
+  </body>
+</html>
